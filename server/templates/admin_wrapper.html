@@ -1,0 +1,33 @@
+<!--look mom, i'm writing front-end code!-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script><!--<script src="js/jquery-ui/jquery-ui.js"></script>-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    {% block scripts  %}
+
+
+    {% endblock%} 
+
+  </head>
+    <body>
+<h1 class = "homeH1">FreeLunch</h1>
+<div id = "links">
+      {% block body  %}
+
+
+    {% endblock%}
+
+    <a href ="/"> Return </a>
+    </body>
+</html>

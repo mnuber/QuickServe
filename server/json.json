@@ -1,0 +1,16 @@
+{u'status': u'OK', u'results': 
+
+
+
+
+
+[{u'geometry': 
+
+{u'location_type': u'ROOFTOP', u'bounds': 
+{u'northeast': {u'lat': 37.2178127, u'lng': -93.2895602}, u'southwest': 
+{u'lat': 37.2175179, u'lng': -93.2901052}}, u'viewport': {u'northeast': 
+{u'lat': 37.2190142802915, u'lng': -93.2884837197085}, u'southwest': 
+{u'lat': 37.2163163197085, u'lng': -93.29118168029152}}, u'location': {u'lat': 37.21766530000001, u'lng': -93.28983269999999}}, u'address_components': [{u'long_name': u'397', u'types': [u'street_number'], u'short_name': u'397'}, {u'long_name': u'East Central Street', u'types': [u'route'], u'short_name': u'E Central St'}, {u'long_name': u'Midtown', u'types': [u'neighborhood', u'political'], u'short_name': u'Midtown'}, {u'long_name': u'Springfield', u'types': [u'locality', u'political'], u'short_name': u'Springfield'}, {u'long_name': u'Greene County', u'types': [u'administrative_area_level_2', u'political'], u'short_name': u'Greene County'}, {u'long_name': u'Missouri', u'types': [u'administrative_area_level_1', u'political'], u'short_name': u'MO'}, {u'long_name': u'United States', u'types': [u'country', u'political'], u'short_name': u'US'}, {u'long_name': u'65802', u'types': [u'postal_code'], u'short_name': u'65802'}, {u'long_name': u'3834', u'types': [u'postal_code_suffix'], u'short_name': u'3834'}], u'place_id': u'ChIJa2Mv6Ppiz4cR7rHZMY4yc5s', u'formatted_address': u'397 E Central St, Springfield, MO 65802, USA', u'types': [u'premise']}]
+
+
+}

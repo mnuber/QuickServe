@@ -1,0 +1,56 @@
+{% extends "admin_wrapper.html" %}
+
+{% block scripts %}
+<style>
+.header{
+    font:arial;
+    font-size: 12pt;
+    font-color: #34f;
+}
+.vibrant{
+    font:arial;
+    font-size: 12pt;
+    background-color: #33f3ff;
+    font-color: #FFF;
+}
+</style>
+{% endblock %}
+
+{% block body %}
+
+
+<div class = "container">
+    <div class = "col-lg-12 header text-center">
+        <span>Update Organizations</span>
+    </div>
+    <div class = "col-lg-12 text-right">
+    <a href = "/add" class = "vibrant">(Add a new Organization) </a>
+    </div> 
+    <div class = "col-lg-12">
+        <table class ="table">
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Edit Details</td>
+                    <td>Edit Filters</td>
+                    <td>Edit Tags</td>
+                    <td>Remove</td>
+                </tr>
+            </thead>
+        {% for organization in orgs %}
+            
+            <tr>
+                <td>{{organization[1]}}</td> 
+                <td><a href = "/edit/{{organization[0]}}">(edit)</a></td>
+                <td><a href = "/edit/{{organization[0]}}">(edit)</a></td>
+                <td><a href = "/edit/{{organization[0]}}">(edit)</a></td>
+                <td><a href = "/delete/{{organization[0]}}">(remove)</a></td> 
+            </tr>
+            
+        {% endfor %}
+        <table>
+    </div>
+</div>
+
+
+{% endblock %}

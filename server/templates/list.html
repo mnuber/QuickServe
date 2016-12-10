@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>List</title>
+
+	<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway|Space+Mono|Titillium+Web" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/home.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/list.css')}}">
+<!-- 
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+
+	<script src="https://use.fontawesome.com/f8dae95365.js"></script>
+
+	
+</head>
+<body>
+
+
+<h1 class = "homeH1">FreeLunch</h1>
+<div id = "links">
+
+{% for item in list%}
+
+	<div class = "place">
+		<div class = "name">
+			<div>			
+				{{item[1]}}
+			</div>
+		</div>
+		<div class = "show" id = "click{{item[0]}}">
+			<div>			
+				{% for i in item[1:4]%}
+					<div>{{i}}
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+
+	</div>
+{% endfor %}
+
+</div>
+
+<script>
+	$(".place").on("click", function(){
+		$(this).children('.show').toggle()
+		
+	});
+</script>
+</body>
+</html>

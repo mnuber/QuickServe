@@ -1,0 +1,139 @@
+{% extends "admin_wrapper.html" %}
+
+{% block scripts %}
+<style>
+.header{
+    font:arial;
+    font-size: 12pt;
+    font-color: #34f;
+}
+
+.ourform{
+    margin-top: 60px;
+}
+</style>
+{% endblock %}
+
+{% block body %}
+
+
+<div class = "container">
+    <div class = "col-lg-12 header text-center">
+        <span>Add a new organization</span>
+    </div>
+    <div class = "col-lg-12">
+        
+        <div class = "form-group row ourform">
+            <form action = "/add" method ="POST"> 
+           
+            
+
+            <label for="orgname" class="col-xs-2 col-form-label">Name</label>
+            <div class="col-xs-10">
+                 <input class="form-control" type="text" value="" name="orgname">
+            </div>
+
+
+            <label for="orgname" class="col-xs-2 col-form-label">Address 1</label>
+            <div class="col-xs-10">
+                 <input class="form-control" type="text" value="" name="address1">
+            </div>
+            <label for="orgname" class="col-xs-2 col-form-label">Address 2</label>
+            <div class="col-xs-10">
+                 <input class="form-control" type="text" value="" name="address2">
+            </div>
+            <label for="orgname" class="col-xs-2 col-form-label">City</label>
+            <div class="col-xs-10">
+                 <input class="form-control" type="text" value="" name="city">
+            </div>
+            <label for="orgname" class="col-xs-2 col-form-label">State</label>
+            <div class="col-xs-10">
+                 <input class="form-control" type="text" value="" name="state">
+            </div>
+            <label for="orgname" class="col-xs-2 col-form-label">Zip</label>
+            <div class="col-xs-10">
+                 <input class="form-control" type="text" value="" name="zip">
+            </div>
+            <label for="orgname" class="col-xs-2 col-form-label">County</label>
+            <div class="col-xs-10">
+                 <input class="form-control" type="text" value="" name="county">
+            </div>
+            <label for="orgname" class="col-xs-2 col-form-label">Telephone</label>
+            <div class="col-xs-10">
+                 <input class="form-control" type="text" value="" name="tel">
+            </div>
+            <label for="orgname" class="col-xs-2 col-form-label">Fax</label>
+            <div class="col-xs-10">
+                 <input class="form-control" type="text" value="" name="fax">
+            </div>
+            <label for="orgname" class="col-xs-2 col-form-label">TTY</label>
+            <div class="col-xs-10">
+                 <input class="form-control" type="text" value="" name="tty">
+            </div>
+
+            <label for="orgname" class="col-xs-2 col-form-label">Toll-Free</label>
+            <div class="col-xs-10">
+                 <input class="form-control" type="text" value="" name="toll-free">
+            </div>
+            
+            <label for="orgname" class="col-xs-2 col-form-label">Hotline</label>
+            <div class="col-xs-10">
+                 <input class="form-control" type="text" value="" name="hotline">
+            </div>
+
+
+            <label for="orgname" class="col-xs-2 col-form-label">Email</label>
+            <div class="col-xs-10">
+                 <input class="form-control" type="text" value="" name="email">
+            </div>
+
+
+            <label for="orgname" class="col-xs-2 col-form-label">Website</label>
+            <div class="col-xs-10">
+                 <input class="form-control" type="text" value="" name="website">
+            </div>
+
+
+
+            <label for="orgname" class="col-xs-2 col-form-label">Facebook Name</label>
+            <div class="col-xs-10">
+                 <input class="form-control" type="text" value="" name="fb_url">
+            </div>
+
+
+
+            <label for="orgname" class="col-xs-2 col-form-label">Facebook URL</label>
+            <div class="col-xs-10">
+                 <input class="form-control" type="text" value="" name="fb_name">
+            </div>
+
+
+
+            <label for="orgname" class="col-xs-2 col-form-label">Twitter</label>
+            <div class="col-xs-10">
+                 <input class="form-control" type="text" value="" name="twitter">
+            </div>
+
+            <label for="orgname" class="col-xs-2 col-form-label">Latitude</label>
+            <div class="col-xs-10">
+                 <input class="form-control" type="text" value="" name="lat">
+            </div>
+
+            <label for="orgname" class="col-xs-2 col-form-label">Longitude</label>
+            <div class="col-xs-10">
+                 <input class="form-control" type="text" value="" name="lng">
+            </div>
+
+            <div class = "container">
+            <div class="col-lg-12 text-right row">
+                <input type="submit" class = "btn btn-primary">
+            </div>
+            </div>  
+
+            </form>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

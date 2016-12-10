@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FreeLunch</title>
+	<style>
+		a:hover{
+			font-color:black;
+		}
+	</style>
+	<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/bundle.min.css')}}">
+
+	<script src="https://use.fontawesome.com/f8dae95365.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway|Space+Mono|Titillium+Web" rel="stylesheet">
+</head>
+<body>
+
+<div id="map"></div>
+
+<h1>FreeLunch</h1>
+<div class = "links">
+	<a href="/map"> <div class = "round"><i class="fa fa-map" aria-hidden="true"></i></div> </a>
+
+	<a href="/profile"><div class = "round"><i class="fa fa-users" aria-hidden="true"></i></a>
+	</div>
+
+	<a href = "/list"><div class = "round"><i class="fa fa-search" aria-hidden="true"></i></div>
+	</div>
+
+	<a href = "/list" class = "black"> <div class = "round"><i class="fa fa-list" aria-hidden="true"></i> </a>
+	</div>
+
+</div>
+
+
+
+</body>
+</html>

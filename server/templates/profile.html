@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FreeLunch</title>
+	<style>
+		a:hover{
+			font-color:black;
+		}
+	</style>
+	<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/bundle.min.css')}}">
+	
+	<script src="https://use.fontawesome.com/f8dae95365.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway|Space+Mono|Titillium+Web" rel="stylesheet">
+</head>
+<body>
+
+<div id="map"></div>
+
+<h1>FreeLunch</h1>
+<div>
+		<div style = "font-size:4vw; text-align:center">
+			To help this app serve you better, please select your gender:
+		</div>
+		<div style = "text-align:center">
+		<img id = "male" src = {{url_for('static', filename='img/male.png')}}></img>
+		<img id = "female" src = {{url_for('static', filename='img/female.png')}}></img>
+		<img id = "non" src = {{url_for('static', filename='img/nonbinary.png')}}></img>
+		</div>
+	</div>
+
+<div style = "margin:50px"	>
+</div>
+<div>
+		<div style = "font-size:4vw; text-align:center">
+			Are you by yourself or with people?
+		</div>
+		<div style = "text-align:center">
+		<img id = "single" src = {{url_for('static', filename='img/single.png')}}></img>
+		<img id = "multiple" src = {{url_for('static', filename='img/multiple.png')}}></img>
+		
+		</div>
+	</div>
+
+
+
+</body>
+</html>

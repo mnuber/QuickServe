@@ -1,0 +1,37 @@
+.round{
+	font-size:15vh;
+	float:right;
+	width:50%;
+	text-align:center;
+	height:30vh ;
+	color:black;
+}
+
+i{
+
+	color:black;
+}
+
+
+body{
+	background:white;
+	margin:0;
+}
+
+.spacer{
+	height:200px;
+	width:100%;
+}
+
+h1{
+	margin:0;
+	padding-top:20vh;
+	padding-bottom:5vh;
+	background:#ff4444;
+	box-shadow:4px 4px 12px black;
+	text-align:center;
+	font-size:7vh !important;
+	margin-bottom:175px;
+	font-family: 'Raleway', sans-serif;
+}
+
